@@ -1,0 +1,13 @@
+---
+version: "3"
+
+tasks:
+  default:
+    desc: list all available tasks
+    cmds:
+      - task --list
+  lint:
+    desc: lint local python files
+    cmds:
+      - isort .
+      - black .
